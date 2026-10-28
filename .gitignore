@@ -1,0 +1,17 @@
+# Compiled class files
+bin/
+*.class
+
+# SQLite Database files
+*.db
+backend/data/*.db
+
+# Uploaded user files (keep sample handouts if desired, but ignore user generated uploads)
+backend/uploads/179*
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

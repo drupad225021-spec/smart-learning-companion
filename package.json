@@ -1,0 +1,21 @@
+{
+  "name": "smart-learning-companion",
+  "version": "1.0.0",
+  "description": "Smart Learning Companion with Pure Java Backend",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./run-backend.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./run-backend.ps1",
+    "build:java": "powershell -Command \"$sources = Get-ChildItem -Path 'backend\\src' -Filter *.java -Recurse | Select-Object -ExpandProperty FullName; javac -encoding UTF-8 -cp 'backend\\lib\\*' -d bin $sources\"",
+    "run:java": "java -cp \"bin;backend\\lib\\*\" com.smartlearning.Main 8080",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [
+    "education",
+    "learning-companion",
+    "java",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC"
+}
